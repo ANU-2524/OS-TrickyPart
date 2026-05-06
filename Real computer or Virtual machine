@@ -1,0 +1,7 @@
+While writing a program, ever u think that the program will run on real computer or virtual machine (fake computer) and how we can check this ?
+-> In the VM, there is a extra layer called the hypervisor. That layer creates a "fake computer" and we get to know that the program running in virtual machine or in real computer.
+
+Designing a process that detects, is there a hidden layer or not ?
+-> We can detect virtualization by checking system level indicators such a CPU information, device drivers, and timing behaviour.
+If the process running on real computer, in system information we will get the real details, but incase program running of VM, we will get slightly different or fake info in system information.
+Even in a VM you can access system information, but the values and behavior reveal whether it’s virtualized or real.
